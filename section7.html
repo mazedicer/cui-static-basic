@@ -1,0 +1,65 @@
+<div class="row section7">
+    <div class="container">
+        <div class="col s12 m6">
+            <div class="section7-a">
+                <div class="contact-details">
+                    <h2>
+                        <img class="right-arrow" src="../images/arrow-right-light.png"/>Contact Us
+                    </h2>
+                    <p>
+                        <strong>Use our underwriting service to offer your consumer an MK Decision.</strong>
+                    </p>
+                    <p>
+                        Contact us for further details.
+                    </p>
+                    <address>
+                        MK Decisioning Systems<br>
+                        3200 N Central Ave #1150<br>
+                        Phoenix, AZ 85012<br>
+                    </address>
+                    <p class="call">
+                        or call us ─
+                        <a class="phone" href="tel:+16024072810">
+                            <span class="slogan-icon fa fa-fw fa-phone"></span>
+                            (602) 407-2810
+                        </a>
+                    </p>
+                </div>
+            </div><!--end of section 7 a-->
+        </div>
+        <!--start of contact form-->
+        <div id="contact" class="col s12 m6">
+            <div class="section7-b">
+
+                <form action='/contact' , name="contactus" , id="contactus" onsubmit="return validateForm()"
+                      method="post">
+                    <div class="mk-field">
+                        <input type="text" id="name" name="name" placeholder="Name" value=""/>
+                        <span id="name_validation" class="error"></span>
+                    </div>
+                    <div class="mk-field">
+                        <input type="email" id="email" name="email" placeholder="Email" value=""/>
+                        <span id="email_validation" class="error"></span>
+                    </div>
+                    <div class="mk-field">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" value=""/>
+                    </div>
+                    <div class="mk-field">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <span id="message_validation" class="error"></span>
+                    </div>
+
+
+                    <h3><span class="fa fa-clock"></span> Average Response Time <span class="mk-label">6</span> minutes
+                    </h3>
+
+
+                    <button class="contact-button" type="submit" , value="submit" , name="submit" , id="submit">
+                        <span class="fa fa-envelope fa-lg fa-fw"></span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div><!--end of contact form-->
+    </div><!--end of section 7 row-->
+</div>
