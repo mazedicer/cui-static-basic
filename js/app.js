@@ -107,6 +107,34 @@ $(document).ready(function($){
     });
 
     /* load sections */
+    fetch("sidebar.html")
+        .then((resp)=>resp.text())
+        .then(function(data){
+        $(".sidebar").html(data);
+        /* section related functions
+        homepage dropdown menu
+        $('.dropdown-item').on('click', function (e) {
+            openSubMenu($(".dropdown-item").index(this));
+            e.stopPropagation();
+        });*/
+    })
+        .catch(function(error){
+        alert(error); 
+    });
+    fetch("splash.html")
+        .then((resp)=>resp.text())
+        .then(function(data){
+        $("#splash").html(data);
+        /* section related functions
+        homepage dropdown menu
+        $('.dropdown-item').on('click', function (e) {
+            openSubMenu($(".dropdown-item").index(this));
+            e.stopPropagation();
+        });*/
+    })
+        .catch(function(error){
+        alert(error); 
+    });
     fetch("section1.html")
         .then((resp)=>resp.text())
         .then(function(data){

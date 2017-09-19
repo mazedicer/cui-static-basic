@@ -7250,22 +7250,22 @@ base-chart.chart {
 .app-header.navbar {
   position: relative;
   flex-direction: row;
-  height: 55px;
+  height: 70px;
   padding: 0;
   margin: 0;
-  background-color: #fff;
+  background-color: #000;
   border-bottom: 1px solid #c2cfd6; }
   .app-header.navbar .navbar-brand {
     display: inline-block;
     width: 155px;
-    height: 55px;
+    height: 70px;
     padding: 0.5rem 1rem;
     margin-right: 0;
-    background-color: #fff;
+    background-color: #000;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70px auto;
+    background-size: 50px auto;
     border-bottom: 1px solid #c2cfd6; }
   .app-header.navbar .navbar-toggler {
     color: #536c79; }
@@ -7291,7 +7291,7 @@ base-chart.chart {
         margin-top: -16px;
         margin-left: 0; }
       .app-header.navbar .nav-item .nav-link > .img-avatar, .app-header.navbar .nav-item .dropdown-toggle > .img-avatar {
-        height: 35px;
+        height: 50px;
         margin: 0 10px; }
   .app-header.navbar .dropdown-menu {
     padding-bottom: 0;
@@ -7365,7 +7365,7 @@ base-chart.chart {
     padding: 0 1rem;
     font-size: 24px;
     font-weight: 800;
-    line-height: 55px;
+    line-height: 70px;
     color: #fff;
     background: 0;
     border: 0;
@@ -8324,7 +8324,7 @@ app-root {
   min-height: 100vh; }
 
 .app-header {
-  flex: 0 0 55px; }
+  flex: 0 0 70px; }
 
 .app-footer {
   flex: 0 0 50px; }
@@ -8349,7 +8349,7 @@ app-root {
   width: 100%; }
 
 .header-fixed .app-body {
-  margin-top: 55px; }
+  margin-top: 70px; }
 
 .sidebar-hidden .sidebar {
   margin-left: -200px; }
@@ -8359,7 +8359,7 @@ app-root {
   width: 200px;
   height: 100%; }
   .sidebar-fixed .sidebar .sidebar-nav {
-    height: calc(100vh - 55px); }
+    height: calc(100vh - 70px); }
 
 .sidebar-fixed .main, .sidebar-fixed .app-footer {
   margin-left: 200px; }
@@ -8372,7 +8372,7 @@ app-root {
   z-index: 1019;
   height: 100%; }
   .sidebar-off-canvas .sidebar .sidebar-nav {
-    height: calc(100vh - 55px); }
+    height: calc(100vh - 70px); }
 
 @media (min-width: 992px) {
   .sidebar-compact .sidebar {
@@ -8404,7 +8404,7 @@ app-root {
   right: 0;
   height: 100%; }
   .aside-menu-fixed .aside-menu .tab-content {
-    height: calc(100vh - 2.375rem - 55px); }
+    height: calc(100vh - 2.375rem - 70px); }
 
 .aside-menu-fixed .main, .aside-menu-fixed .app-footer {
   margin-right: 250px; }
@@ -8418,14 +8418,14 @@ app-root {
   z-index: 1019;
   height: 100%; }
   .aside-menu-off-canvas .aside-menu .tab-content {
-    height: calc(100vh - 2.375rem - 55px); }
+    height: calc(100vh - 2.375rem - 70px); }
 
 .breadcrumb-fixed .main {
   padding-top: 3.875rem; }
 
 .breadcrumb-fixed .breadcrumb {
   position: fixed;
-  top: 55px;
+  top: 70px;
   right: 0;
   left: 0;
   z-index: 1018; }
@@ -8476,13 +8476,13 @@ app-root {
     width: 100%;
     text-align: center; }
     .app-header .navbar-toggler {
-      color: #536c79; }
+      color: #fff; }
     .app-header .navbar-brand {
       position: absolute;
       left: 50%;
       margin-left: -77.5px; }
   .app-body {
-    margin-top: 55px; }
+    margin-top: 70px; }
   .sidebar {
     position: fixed;
     width: 220px;
@@ -8499,7 +8499,7 @@ app-root {
     width: 220px;
     margin-left: 0; }
     .sidebar-mobile-show .sidebar .sidebar-nav {
-      height: calc(100vh - 55px); }
+      height: calc(100vh - 70px); }
   .sidebar-mobile-show .main {
     margin-right: -220px !important;
     margin-left: 220px !important; }
@@ -8596,7 +8596,7 @@ hr.transparent {
   outline: 0; }
 
 .navbar .dropdown-toggle .img-avatar {
-  height: 35px;
+  height: 50px;
   margin: 0 10px; }
 
 *[dir="rtl"] {
@@ -8648,7 +8648,7 @@ hr.transparent {
     z-index: 1019;
     height: 100%; }
     *[dir="rtl"] .aside-menu-off-canvas .aside-menu .tab-content {
-      height: calc(100vh - 2.375rem - 55px); }
+      height: calc(100vh - 2.375rem - 70px); }
   *[dir="rtl"] .sidebar .sidebar-nav {
     direction: ltr; }
     *[dir="rtl"] .sidebar .sidebar-nav * {
@@ -8720,3 +8720,11 @@ hr.transparent {
     border-right-color: #f0f3f5; }
   *[dir="rtl"].callout-dark {
     border-right-color: #29363d; }
+
+.sidebar .sidebar-nav .nav .nav-item .nav-link .icons, .sidebar .sidebar-nav .nav .nav-item .navbar .dropdown-toggle .icons, .navbar .sidebar .sidebar-nav .nav .nav-item .dropdown-toggle .icons {
+  float: left; }
+
+.section1 {
+  background: url(/img/mkmission.jpg) center 100% no-repeat #fff;
+  background-size: cover;
+  height: 55vh; }

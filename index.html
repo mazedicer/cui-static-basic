@@ -1,32 +1,63 @@
 <!--
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.0-alpha.6
- * @link http://coreui.io
- * Copyright (c) 2017 creativeLabs Łukasz Holeczek
- * @license MIT
- -->
+* CoreUI - Open Source Bootstrap Admin Template
+* @version v1.0.0-alpha.6
+* @link http://coreui.io
+* Copyright (c) 2017 creativeLabs Łukasz Holeczek
+* @license MIT
+-->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
-    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
-    <link rel="shortcut icon" href="img/favicon.png">
-    <title>CoreUI - Open Source Bootstrap Admin Template</title>
+    <head>
+        <title>MK Decision | Automated Decisioning System</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MK Decisioning Systems (MK) provides a cloud-based, automated underwriting
+                                          platform to Banks, Credit Unions, Finance Companies, and Retail">
+        <meta name="author" content="Łukasz Holeczek">
+        <meta name="keywords" content="MK Decision, MK, Automated Decisioning System, underwriting service, Private Label Credit Cards">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Muli|Slabo+27px" rel="stylesheet">
+        <!-- Icons -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <!-- Icons -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/simple-line-icons.css" rel="stylesheet">
+            ga('create', 'UA-84505541-1', 'auto');
+            ga('send', 'pageview');
 
-    <!-- Main styles for this application -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        </script>
+        <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://mkdecision.com",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1-602-407-2810",
+    "contactType": "customer service"
+  }]
+}
+        </script>
+        <!-- Main styles for this application -->
+        <link href="css/mk.css" rel="stylesheet">
+        <link href="css/materialize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-<!-- BODY options, add following classes to body to change options
+    <!-- BODY options, add following classes to body to change options
 
 // Header options
 1. '.header-fixed'					- Fixed Header
@@ -51,64 +82,58 @@
 
 -->
 
-<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
-    <header class="app-header navbar">
-        <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
+    <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+        <header class="app-header navbar">
+            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
 
-    </header>
+        </header>
 
-    <div class="app-body">
-        <div class="sidebar">
-            <nav class="sidebar-nav">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Menu</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="app-body">
+            <div class="sidebar"></div>
+            <!-- Main content -->
+            <main class="main">
+                <div class="container-fluid">
+                    <div id="splash"></div>
+                    <div id="section1"></div>
+                    <div id="section2"></div>
+                    <div id="section3"></div>
+                    <div id="section4"></div>
+                    <div id="section5"></div>
+                    <div id="section6"></div>
+                    <div id="section7"></div>
+                </div>
+                <!-- /.conainer-fluid -->
+            </main>
         </div>
-        <!-- Main content -->
-        <main class="main">
-            <div class="container-fluid">
-                <div id="section1"></div>
-                <div id="section2"></div>
-                <div id="section3"></div>
-                <div id="section4"></div>
-                <div id="section5"></div>
-                <div id="section6"></div>
-                <div id="section7"></div>
-            </div>
-            <!-- /.conainer-fluid -->
-        </main>
-    </div>
 
-    <footer class="app-footer">
-        <a href="http://mkdecision.com">MKdecision.com</a> © 2017
-    </footer>
+        <footer class="app-footer">
+            <a href="http://mkdecision.com">MKdecision.com</a> © 2017
+        </footer>
 
-    <!-- Bootstrap and necessary plugins -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/popper.js/index.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/pace/pace.min.js"></script>
+        <!-- Bootstrap and necessary plugins -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/popper.js/index.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/pace/pace.min.js"></script>
 
 
 
-    <!-- GenesisUI main scripts -->
+        <!-- GenesisUI main scripts -->
 
-    <script src="js/app.js"></script>
-    <script src="js/utils.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.bundle.js"></script>
+        <script src="js/utils.js"></script>
 
 
 
 
-    <!-- Plugins and scripts required by this views -->
+        <!-- Plugins and scripts required by this views -->
 
-    <!-- Custom scripts required by this view -->
-    <script src="js/views/main.js"></script>
+        <!-- Custom scripts required by this view -->
+        <script src="js/views/main.js"></script>
 
-</body>
+    </body>
 
 </html>
