@@ -1,10 +1,16 @@
 body,button,html,input,select,textarea {
     font-family: Muli,Sans-Serif
 }
+.mk-computer .container {
+        padding-right: 0px;
+    }
 @media (min-width: 1200px){
-.container {
-    max-width: 800px;
-}
+    .container {
+        max-width: 800px;
+    }
+    .mk-computer .container {
+        max-width: 1000px;
+    }
 }
 .logo,.navigation {
     text-decoration: none;
@@ -656,6 +662,10 @@ span.error {
         padding-right:0px;
     padding-left:0px;
 }
+.col-md-12 {
+    padding-right:0px;
+    padding-left:0px;
+}
 
 .table {
     background: 0 0;
@@ -793,7 +803,7 @@ span.error {
     }
 
     footer {
-        margin-top: 45px
+        /*margin-top: 45px*/
     }
 
     footer .footer-bar {
