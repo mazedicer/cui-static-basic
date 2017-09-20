@@ -7,9 +7,9 @@
         npm -v
 5. in "/var/www/html/Static_Starter_GULP/" install dependencies
     run:
+        npm install
         npm install -g gulp
         npm install -g bower
         bower install
-        npm install
         gulp serve
 6. http://localhost:3000
