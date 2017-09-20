@@ -927,7 +927,7 @@ span.error {
 
 .about .header {
     height: 30vh;
-    background: url(../images/mk.jpg) center center none;
+    background: url(/img/mk.jpg) center center none;
     background-size: cover
 }
 
@@ -1111,7 +1111,7 @@ span.error {
     font-size: 2em;
     color: #1a1a1a;
     background-size: contain;
-    background-image: url(/images/cursor.png);
+    background-image: url(/img/cursor.png);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
