@@ -14,9 +14,7 @@ var app = {
         return null
     }
 };
-$(document).ready(function() {
-    app.init()
-}),
+
 app.navscroll = {
     init: function(t) {
         this.el = t,
@@ -35,7 +33,7 @@ app.navscroll = {
             }
         })
     }
-},
+};
 app.goscroll = {
     init: function(t) {
         this.el = t,
@@ -52,7 +50,7 @@ app.goscroll = {
             })
         }
     }
-},
+};
 app.mkcomputer = {
     init: function(t) {
         var i = this;
@@ -130,3 +128,5 @@ app.mkcomputer = {
         return app.getSupportedPropertyName(t)
     }
 };
+app.init();
+app.mkcomputer.init(this);

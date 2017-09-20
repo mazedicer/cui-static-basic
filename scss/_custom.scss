@@ -10,3 +10,9 @@
 .app-footer {
     z-index:10;
 }
+.app-header.navbar {
+    border-bottom:none;
+}
+.app-header.navbar .navbar-brand {
+    border-bottom:none;
+}

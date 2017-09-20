@@ -238,7 +238,9 @@ footer .footer-bar .footer-bar-inner a.subtle {
 .section2 {
     padding: 10vh 0;
     background: #EBF5F9;
-    color: #193f6d
+    color: #193f6d;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .section2 h3 {
@@ -300,7 +302,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
     padding: 15px 18px;
     font-size: .9em;
     color: #fff;
-    margin: 20px 0;
+    margin: 50px 0;
     display: inline-block;
     text-align: center;
     border: 1px solid #d2d2d2
@@ -348,7 +350,9 @@ footer .footer-bar .footer-bar-inner a.subtle {
 
 .section4 {
     z-index: 2;
-    background: #F5F5F5
+    background: #F5F5F5;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .section4-a {
@@ -705,7 +709,7 @@ span.error {
     }
 
     .section3-b {
-        padding: 20px!important
+        /*padding: 20px!important*/
     }
 
     .header {
@@ -721,7 +725,7 @@ span.error {
     }
 
     .home-header {
-        height: 40vh
+        height: 24vh
     }
 
     .section3-a,.section6 .section6-b {
@@ -747,7 +751,7 @@ span.error {
     }
 
     .section5 {
-        padding: 2vh 2vh 60px
+        padding: 6vh 6vh 60px
     }
 
     .section6-a {
@@ -768,7 +772,9 @@ span.error {
     }
 
     .section4-b {
-        height: 300px
+        height: 300px;
+        margin-left:-15px;
+        margin-right:-15px;
     }
 
     .section5 .mk-partnership-list p {
@@ -921,7 +927,7 @@ span.error {
     }
 
     .section7 {
-        padding: 5vh
+        padding: 4vh 8vh 4vh 4vh
     }
 }
 
@@ -1001,13 +1007,31 @@ span.error {
         padding:5vh;
         border-radius: 40px
     }
+    .mk-computer .inner:before {
+        top:2.5vh;
+        width: 20px;
+        height: 20px;
+        border-width: 2px
+    }
+    .mk-computer .inner .inner-inner .browser .mock-site .no-pad {
+        padding:0
+    }
+}
+
+@media (min-width: 1400px) {
+    .mk-computer .container {
+        max-width: 1300px;
+    }
+    #section2 .container, #section5 .container, #section7 .container {
+        max-width: 1200px;
+    }
 }
 
 .mk-computer .inner:before {
     content: '';
     position: absolute;
     top: 2vh;
-    left: 50%;
+    left: 50.7%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -1017,15 +1041,6 @@ span.error {
     background: -webkit-linear-gradient(45deg,#666 0,#333 100%);
     background: linear-gradient(45deg,#666 0,#333 100%);
     border: 1px solid #b3b3b3
-}
-
-@media (min-width: 768px) {
-    .mk-computer .inner:before {
-        top:2.5vh;
-        width: 20px;
-        height: 20px;
-        border-width: 2px
-    }
 }
 
 .mk-computer .inner .inner-inner {
@@ -1124,19 +1139,6 @@ span.error {
     transform: translate3d(0)
 }
 
-@media (min-width: 992px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .mock-cursor {
-        top:50%;
-        left: 50%
-    }
-}
-
-@media (min-width: 768px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .no-pad {
-        padding:0
-    }
-}
-
 .mk-computer .inner .inner-inner .browser .mock-site .mock-modal-backdrop {
     position: absolute;
     width: 100%;
@@ -1164,12 +1166,6 @@ span.error {
     -webkit-box-shadow: 0 0 10px -3px #b3b3b3;
     box-shadow: 0 0 10px -3px #b3b3b3;
     display: none
-}
-
-@media (min-width: 992px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal {
-        width:50%
-    }
 }
 
 .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-head {
@@ -1214,24 +1210,10 @@ span.error {
     font-size: .8em
 }
 
-@media (min-width: 992px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mock-label {
-        font-size:1em;
-        padding: 10px
-    }
-}
-
 .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-border,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-primary {
     font-size: .8em;
     padding: 5px 10px;
     margin: 0
-}
-
-@media (min-width: 992px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-border,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-primary {
-        font-size:1em;
-        padding: 10px
-    }
 }
 
 .mk-computer .inner .inner-inner .browser .mock-site .mock-header {
@@ -1281,16 +1263,28 @@ span.error {
     .mk-computer .inner .inner-inner .browser .mock-site .mock-container .mock-h1 .table {
         margin-bottom: 20px
     }
+    .mk-computer .inner .inner-inner .browser .mock-site .mock-container .mock-pay {
+        margin:10px
+    }
+    .mk-computer .inner .inner-inner .browser .mock-site .mock-cursor {
+        top:50%;
+        left: 50%
+    }
+    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal {
+        width:50%
+    }
+    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mock-label {
+        font-size:1em;
+        padding: 10px
+    }
+    .mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-border,.mk-computer .inner .inner-inner .browser .mock-site .mock-modal .mock-modal-body .mock-approved .mk-button-primary {
+        font-size:1em;
+        padding: 10px
+    }
 }
 
 .mk-computer .inner .inner-inner .browser .mock-site .mock-container .mock-pay {
     margin: 3px
-}
-
-@media (min-width: 992px) {
-    .mk-computer .inner .inner-inner .browser .mock-site .mock-container .mock-pay {
-        margin:10px
-    }
 }
 
 .mk-computer .inner .inner-inner .browser .mock-site .mock-container .mock-pay .mock-button {

@@ -224,6 +224,7 @@ $(document).ready(function($){
         .catch(function(error) {
         alert(error);
     }); 
+    
 });
 
 /****
