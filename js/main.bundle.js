@@ -14,7 +14,6 @@ var app = {
         return null
     }
 };
-
 app.navscroll = {
     init: function(t) {
         this.el = t,
@@ -33,7 +32,7 @@ app.navscroll = {
             }
         })
     }
-};
+},
 app.goscroll = {
     init: function(t) {
         this.el = t,
@@ -50,7 +49,7 @@ app.goscroll = {
             })
         }
     }
-};
+},
 app.mkcomputer = {
     init: function(t) {
         var i = this;
@@ -129,4 +128,3 @@ app.mkcomputer = {
     }
 };
 app.init();
-app.mkcomputer.init(this);
