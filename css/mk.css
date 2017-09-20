@@ -1,7 +1,11 @@
 body,button,html,input,select,textarea {
     font-family: Muli,Sans-Serif
 }
-
+@media (min-width: 1200px){
+.container {
+    max-width: 800px;
+}
+}
 .logo,.navigation {
     text-decoration: none;
     line-height: 40px;
@@ -486,7 +490,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
 .section6 .section6-b {
     position: relative;
     z-index: 999;
-    background: url(../images/section6.jpg) right center no-repeat #fff;
+    background: url(/img/section6.jpg) right center no-repeat #fff;
     -webkit-background-size: cover;
     height: 500px;
     background-size: cover
@@ -627,7 +631,7 @@ span.error {
 }
 
 .mk-computer .container {
-    width: 95%
+    width: 100%
 }
 
 .text-right {
@@ -648,7 +652,9 @@ span.error {
 
 .col-md-6 {
     float: left;
-    width: 50%
+    width: 50%;
+        padding-right:0px;
+    padding-left:0px;
 }
 
 .table {
@@ -965,7 +971,7 @@ span.error {
 .mk-computer {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    width: 100%;
+    width: 96%;
     z-index: 1
 }
 

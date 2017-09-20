@@ -7354,6 +7354,7 @@ base-chart.chart {
     background-color: #fff; }
 
 .sidebar {
+  z-index: 20;
   padding: 0;
   overflow: hidden;
   color: #fff;
@@ -7442,7 +7443,7 @@ base-chart.chart {
           width: 20px;
           margin: 0 0.5rem 0 0;
           font-size: 14px;
-          color: #536c79;
+          color: #fff;
           text-align: center; }
         .sidebar .nav .nav-item .nav-link .badge, .sidebar .nav .nav-item .navbar .dropdown-toggle .badge, .navbar .sidebar .nav .nav-item .dropdown-toggle .badge {
           float: right;
@@ -7488,7 +7489,7 @@ base-chart.chart {
           width: 20px;
           margin: -3px 0.5rem 0 0;
           font-size: 10px;
-          color: #536c79;
+          color: #fff;
           text-align: center;
           vertical-align: middle; }
       .sidebar .nav .nav-item .progress {
@@ -8728,3 +8729,6 @@ hr.transparent {
   background: url(/img/mkmission.jpg) center 100% no-repeat #fff;
   background-size: cover;
   height: 55vh; }
+
+.app-footer {
+  z-index: 10; }

@@ -1,5 +1,6 @@
 // scss-lint:disable NestingDepth, SelectorDepth
 .sidebar {
+    z-index: 20;
   padding: $sidebar-padding;
   overflow: hidden;
   color: $sidebar-color;
