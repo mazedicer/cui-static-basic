@@ -987,7 +987,7 @@ span.error {
 .mk-computer {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    width: 96%;
+    width: 98.5%;
     z-index: 1
 }
 
@@ -1024,6 +1024,9 @@ span.error {
     }
     #section2 .container, #section5 .container, #section7 .container {
         max-width: 1200px;
+    }
+    .app-header.navbar .navbar-brand {
+        margin-left:150px;
     }
 }
 

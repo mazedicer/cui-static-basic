@@ -8758,3 +8758,7 @@ body {
 
 .sidebar .nav .nav-item .nav-link [class^="icon-"], .sidebar .nav .nav-item .navbar .dropdown-toggle [class^="icon-"], .navbar .sidebar .nav .nav-item .dropdown-toggle [class^="icon-"] {
   margin-top: 2.5px; }
+
+b,
+strong {
+  font-weight: 500; }
