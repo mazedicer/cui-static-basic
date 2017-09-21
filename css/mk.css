@@ -220,7 +220,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
 }
 
 .section1 {
-    background: url(/img/mkmission.jpg) center 90% no-repeat #fff;
+    background: url(../img/mkmission.jpg) center 90% no-repeat #fff;
     background-size: cover;
     height: 55vh
 }
@@ -293,7 +293,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
 .section3 .section3-a {
     z-index: 999;
     height: 500px;
-    background: url(/img/section3.jpg) right center no-repeat #fff;
+    background: url(../img/section3.jpg) right center no-repeat #fff;
     -webkit-background-size: cover;
     background-size: cover
 }
@@ -363,7 +363,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
 
 .section4-b {
     z-index: 999;
-    background: url(/img/section4.jpg);
+    background: url(../img/section4.jpg);
     height: 500px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -500,7 +500,7 @@ footer .footer-bar .footer-bar-inner a.subtle {
 .section6 .section6-b {
     position: relative;
     z-index: 999;
-    background: url(/img/section6.jpg) right center no-repeat #fff;
+    background: url(../img/section6.jpg) right center no-repeat #fff;
     -webkit-background-size: cover;
     height: 500px;
     background-size: cover
@@ -933,7 +933,7 @@ span.error {
 
 .about .header {
     height: 30vh;
-    background: url(/img/mk.jpg) center center none;
+    background: url(../img/mk.jpg) center center none;
     background-size: cover
 }
 
@@ -1129,7 +1129,7 @@ span.error {
     font-size: 2em;
     color: #1a1a1a;
     background-size: contain;
-    background-image: url(/img/cursor.png);
+    background-image: url(../img/cursor.png);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
