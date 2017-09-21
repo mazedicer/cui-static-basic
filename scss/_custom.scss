@@ -1,6 +1,10 @@
 // Here you can add other styles
+body {
+    background: #38B3E4;
+}
 .sidebar .sidebar-nav .nav .nav-item .nav-link .icons {
     float:left;
+    width:40px;
 }
 .section1 {
     background: url(/img/mkmission.jpg) center 100% no-repeat #fff;
@@ -10,9 +14,25 @@
 .app-footer {
     z-index:10;
 }
+.navbar {
+    justify-content: flex-start;
+}
 .app-header.navbar {
     border-bottom:none;
+    background-color:transparent;
 }
 .app-header.navbar .navbar-brand {
     border-bottom:none;
+    background-color:transparent;
+    color:#fff;
+    font-size: 1.3em;
+    font-family: Muli,Sans-Serif;
+}
+.app-header.navbar .navbar-brand span {
+    position:relative;
+    left:100px;
+    top:30px;
+}
+.sidebar .nav .nav-item .nav-link [class^="icon-"] {
+    margin-top:2.5px;
 }

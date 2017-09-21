@@ -8722,8 +8722,12 @@ hr.transparent {
   *[dir="rtl"].callout-dark {
     border-right-color: #29363d; }
 
+body {
+  background: #38B3E4; }
+
 .sidebar .sidebar-nav .nav .nav-item .nav-link .icons, .sidebar .sidebar-nav .nav .nav-item .navbar .dropdown-toggle .icons, .navbar .sidebar .sidebar-nav .nav .nav-item .dropdown-toggle .icons {
-  float: left; }
+  float: left;
+  width: 40px; }
 
 .section1 {
   background: url(/img/mkmission.jpg) center 100% no-repeat #fff;
@@ -8733,8 +8737,24 @@ hr.transparent {
 .app-footer {
   z-index: 10; }
 
+.navbar {
+  justify-content: flex-start; }
+
 .app-header.navbar {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: transparent; }
 
 .app-header.navbar .navbar-brand {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: Muli,Sans-Serif; }
+
+.app-header.navbar .navbar-brand span {
+  position: relative;
+  left: 100px;
+  top: 30px; }
+
+.sidebar .nav .nav-item .nav-link [class^="icon-"], .sidebar .nav .nav-item .navbar .dropdown-toggle [class^="icon-"], .navbar .sidebar .nav .nav-item .dropdown-toggle [class^="icon-"] {
+  margin-top: 2.5px; }
