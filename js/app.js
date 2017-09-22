@@ -27,7 +27,14 @@ $.grayLightest =  '#f8f9fa';
 */
 
 $(document).ready(function($){
+    $(window).scroll(function() {
 
+        if ($(this).scrollTop()>100){
+            $('.navbar-brand').fadeOut();
+        }else{
+            $('.navbar-brand').fadeIn();
+        }
+    });
 
     // Add class .active to current link
     $.navigation.find('a').each(function(){
@@ -275,13 +282,13 @@ function init(url) {
 }
 function scrollerFunction(elem){
     //event.preventDefault();
-            var currentID = $(elem).attr('id');
-            //console.log(currentID);
-            var destination = $(elem).attr('anchor');
-            //console.log(destination);
-            var p = $('#' + destination);
-            var position = p.position();
-            $('body,html').animate({
-                scrollTop:position.top
-            }, 1000);
+    var currentID = $(elem).attr('id');
+    //console.log(currentID);
+    var destination = $(elem).attr('anchor');
+    //console.log(destination);
+    var p = $('#' + destination);
+    var position = p.position();
+    $('body,html').animate({
+        scrollTop:position.top
+    }, 1000);
 }
