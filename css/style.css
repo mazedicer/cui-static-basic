@@ -7248,7 +7248,7 @@ base-chart.chart {
   border: 0; }
 
 .app-header.navbar {
-  position: relative;
+  position: fixed;
   flex-direction: row;
   height: 70px;
   padding: 0;
@@ -7262,7 +7262,7 @@ base-chart.chart {
     padding: 0.5rem 1rem;
     margin-right: 0;
     background-color: #000;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo-black.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50px auto;
@@ -7276,7 +7276,8 @@ base-chart.chart {
     position: relative;
     min-width: 50px;
     margin: 0 !important;
-    text-align: center; }
+    text-align: center;
+    padding-left: 30px; }
     .app-header.navbar .nav-item button {
       margin: 0 auto; }
     .app-header.navbar .nav-item .nav-link, .app-header.navbar .nav-item .dropdown-toggle {
@@ -7293,6 +7294,8 @@ base-chart.chart {
       .app-header.navbar .nav-item .nav-link > .img-avatar, .app-header.navbar .nav-item .dropdown-toggle > .img-avatar {
         height: 50px;
         margin: 0 10px; }
+    .app-header.navbar .nav-item:first-child {
+      padding-left: 80px; }
   .app-header.navbar .dropdown-menu {
     padding-bottom: 0;
     line-height: 1.5; }
@@ -8743,14 +8746,16 @@ body {
 .navbar {
   justify-content: flex-start; }
 
+.navbar-collapse {
+  flex-basis: 0; }
+
 .app-header.navbar {
-  border-bottom: none;
-  background-color: transparent; }
+  border-bottom: none; }
 
 .app-header.navbar .navbar-brand {
   border-bottom: none;
   background-color: transparent;
-  color: #fff;
+  color: #000;
   font-size: 1.3em;
   font-family: Muli,Sans-Serif; }
 
@@ -8765,3 +8770,19 @@ body {
 b,
 strong {
   font-weight: 500; }
+
+.slogan-icon.bounce.fa.fa-chevron-down {
+  cursor: pointer; }
+
+header button {
+  display: block; }
+
+#navbarResponsive {
+  display: none; }
+
+@media (min-width: 769px) {
+  header button {
+    display: none; }
+  #navbarResponsive {
+    display: block;
+    position: absolute; } }

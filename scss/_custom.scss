@@ -20,14 +20,16 @@ body {
 .navbar {
     justify-content: flex-start;
 }
+.navbar-collapse {
+    flex-basis: 0;
+}
 .app-header.navbar {
     border-bottom:none;
-    background-color:transparent;
 }
 .app-header.navbar .navbar-brand {
     border-bottom:none;
     background-color:transparent;
-    color:#fff;
+    color:#000;
     font-size: 1.3em;
     font-family: Muli,Sans-Serif;
 }
@@ -42,4 +44,22 @@ body {
 b,
 strong {
   font-weight: 500; // Add the correct font weight in Chrome, Edge, and Safari
+}
+.slogan-icon.bounce.fa.fa-chevron-down {
+    cursor: pointer;
+}
+header button{
+    display:block;
+}
+#navbarResponsive{
+    display:none;
+}
+@media (min-width:769px){
+    header button{
+        display:none;
+    }
+    #navbarResponsive{
+    display:block;
+        position:absolute;
+}
 }

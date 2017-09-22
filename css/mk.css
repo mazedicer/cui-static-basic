@@ -1012,6 +1012,12 @@ span.error {
         margin-left:-30px;
     }
 }
+@media (min-width: 481px) and (max-width: 767px){
+    .section4-b {
+        margin-right:-30px;
+        margin-left:-30px;
+    }
+}
 @media (min-width: 768px) {
     .mk-computer .inner {
         padding:5vh;
@@ -1035,9 +1041,7 @@ span.error {
     #section2 .container, #section5 .container, #section7 .container {
         max-width: 1200px;
     }
-    .app-header.navbar .navbar-brand {
-        margin-left:150px;
-    }
+
 }
 
 .mk-computer .inner:before {
