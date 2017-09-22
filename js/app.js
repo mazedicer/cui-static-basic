@@ -28,6 +28,7 @@ $.grayLightest =  '#f8f9fa';
 
 $(document).ready(function($){
 
+
     // Add class .active to current link
     $.navigation.find('a').each(function(){
 
@@ -175,6 +176,9 @@ $(document).ready(function($){
         .then(function(data){
         $("#section3").html(data);
         /* section related functions*/
+        $(".mk-button-white").on("click", function(){
+            scrollerFunction(this);
+        });
     })
         .catch(function(error){
         alert(error); 
@@ -200,6 +204,9 @@ $(document).ready(function($){
         .then(function(data){
         /* section related functions*/
         $("#section5").html(data);
+        $(".section5-button").on("click", function(){
+            scrollerFunction(this);
+        });
     })
         .catch(function(error) {
         alert(error);
@@ -210,6 +217,9 @@ $(document).ready(function($){
         .then(function(data){
         /* section related functions*/
         $("#section6").html(data);
+        $(".section6-button").on("click", function(){
+            scrollerFunction(this);
+        });
     })
         .catch(function(error) {
         alert(error);
@@ -224,7 +234,7 @@ $(document).ready(function($){
         .catch(function(error) {
         alert(error);
     }); 
-    
+
 });
 
 /****
@@ -262,4 +272,16 @@ function init(url) {
     /* ---------- Popover ---------- */
     $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
+}
+function scrollerFunction(elem){
+    //event.preventDefault();
+            var currentID = $(elem).attr('id');
+            //console.log(currentID);
+            var destination = $(elem).attr('anchor');
+            //console.log(destination);
+            var p = $('#' + destination);
+            var position = p.position();
+            $('body,html').animate({
+                scrollTop:position.top
+            }, 1000);
 }

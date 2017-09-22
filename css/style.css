@@ -8734,6 +8734,9 @@ body {
   background-size: cover;
   height: 55vh; }
 
+#section2, #section3, #section4, #section6 {
+  padding-left: 15px; }
+
 .app-footer {
   z-index: 10; }
 

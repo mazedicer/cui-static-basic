@@ -40,7 +40,8 @@ input:not([type]):focus:not([readonly]),input[type=date]:focus:not([readonly]),i
 }
 
 button:focus {
-    background: #35A4D0
+    background: transparent;
+    outline:none;
 }
 
 .row {
