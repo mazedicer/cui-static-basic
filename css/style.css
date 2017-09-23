@@ -7253,7 +7253,7 @@ base-chart.chart {
   height: 70px;
   padding: 0;
   margin: 0;
-  background-color: #000;
+  background-color: #484848;
   border-bottom: 1px solid #c2cfd6; }
   .app-header.navbar .navbar-brand {
     display: inline-block;
@@ -7262,7 +7262,7 @@ base-chart.chart {
     padding: 0.5rem 1rem;
     margin-right: 0;
     background-color: #000;
-    background-image: url("../img/logo-black.png");
+    background-image: url("../img/logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50px auto;
@@ -7294,8 +7294,6 @@ base-chart.chart {
       .app-header.navbar .nav-item .nav-link > .img-avatar, .app-header.navbar .nav-item .dropdown-toggle > .img-avatar {
         height: 50px;
         margin: 0 10px; }
-    .app-header.navbar .nav-item:first-child {
-      padding-left: 80px; }
   .app-header.navbar .dropdown-menu {
     padding-bottom: 0;
     line-height: 1.5; }
@@ -8746,6 +8744,9 @@ body {
 .navbar {
   justify-content: flex-start; }
 
+.navbar-nav .nav-link, .navbar-nav .navbar .dropdown-toggle, .navbar .navbar-nav .dropdown-toggle {
+  color: #969696; }
+
 .navbar-collapse {
   flex-basis: 0; }
 
@@ -8755,9 +8756,10 @@ body {
 .app-header.navbar .navbar-brand {
   border-bottom: none;
   background-color: transparent;
-  color: #000;
-  font-size: 1.3em;
-  font-family: Muli,Sans-Serif; }
+  color: #fff;
+  font-size: 1.5em;
+  font-family: Muli,Sans-Serif;
+  font-weight: bold; }
 
 .app-header.navbar .navbar-brand span {
   position: relative;

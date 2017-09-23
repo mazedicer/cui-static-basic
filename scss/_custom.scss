@@ -20,6 +20,9 @@ body {
 .navbar {
     justify-content: flex-start;
 }
+.navbar-nav .nav-link{
+    color:#969696;
+}
 .navbar-collapse {
     flex-basis: 0;
 }
@@ -29,9 +32,10 @@ body {
 .app-header.navbar .navbar-brand {
     border-bottom:none;
     background-color:transparent;
-    color:#000;
-    font-size: 1.3em;
+    color:#fff;
+    font-size: 1.5em;
     font-family: Muli,Sans-Serif;
+    font-weight: bold;
 }
 .app-header.navbar .navbar-brand span {
     position:relative;
