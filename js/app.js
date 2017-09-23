@@ -300,17 +300,13 @@ function scrollerFunction(elem){
     var p = $('#' + destination);
     var position = p.position();
     $('body,html').animate({
-        scrollTop:position.top
+        scrollTop:position.top-70
     }, 1000);
 }
 function rightAlign(elem){
     var elem_width = $(elem).width();
-    console.log(elem_width);
     var screen_width = $(document).width();
-    console.log(screen_width);
     var difference = screen_width - elem_width;
-    console.log(difference);
     $(elem).offset({left:difference-50});
-
 }
 rightAlign("#navbarResponsive");
